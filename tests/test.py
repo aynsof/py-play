@@ -4,6 +4,9 @@ import unittest
 def IsOdd(n):
     return n % 2 == 1
 
+def IsFalse():
+    return False
+
 # Here's our "unit tests".
 class IsOddTests(unittest.TestCase):
 
