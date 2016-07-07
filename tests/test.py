@@ -4,8 +4,8 @@ import unittest
 def IsOdd(n):
     return n % 2 == 1
 
-def IsFalse():
-    return False
+def PlusOne(n):
+    return n + 1
 
 # Here's our "unit tests".
 class IsOddTests(unittest.TestCase):
@@ -15,6 +15,11 @@ class IsOddTests(unittest.TestCase):
 
     def testTwo(self):
         self.failIf(IsOdd(2))
+
+class PlusOneTests(unittest.TestCase):
+
+    def testOne(self):
+        self.assertEqual(PlusOne(3),5)
 
 def main():
     unittest.main()
